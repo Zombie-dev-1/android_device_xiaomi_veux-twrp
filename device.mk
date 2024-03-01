@@ -13,31 +13,4 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Boot Control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor \
-    libpiex_shim
-
-PRODUCT_PACKAGES += \
-    bootctrl.holi
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.holi \
-    libgptutils \
-    libz \
-    libcutils
-
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
-    update_engine \
-    update_verifier \
-    update_engine_sideload
