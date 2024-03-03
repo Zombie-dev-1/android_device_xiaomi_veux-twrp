@@ -101,4 +101,3 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_INPUT_BLACKLIST := accelerometer
-TW_INPUT_BLACKLIST := "accelerometer\x0agyroscope"
