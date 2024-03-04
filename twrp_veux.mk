@@ -21,6 +21,10 @@ PRODUCT_BRAND := qti
 PRODUCT_MODEL := Holi for arm64
 PRODUCT_MANUFACTURER := xiaomi
 
+# Forcefully add mtp support (adb is already there)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

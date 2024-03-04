@@ -42,6 +42,10 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_BOOTLOADER_BOARD_NAME := veux
 TARGET_NO_BOOTLOADER := true
 
+# Display
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
@@ -70,6 +74,10 @@ BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product mi_ext vendor odm
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
+
+# Set FSTAB
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+
 # Platform
 TARGET_BOARD_PLATFORM := holi
 
@@ -92,7 +100,7 @@ PLATFORM_VERSION := 16.1.0
 
 #TWRP Logging
 
-TWRP_EVENT_LOGGING := true
+#TWRP_EVENT_LOGGING := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -103,3 +111,6 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_INPUT_BLACKLIST := accelerometer
+TW_INCLUDE_FB2PNG := true  
+TW_DEFAULT_LANGUAGE := en 
+TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
