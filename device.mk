@@ -20,3 +20,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display
+
+# Boot control, Firmware
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl-qti.recovery \
+    miui_prebuilt
