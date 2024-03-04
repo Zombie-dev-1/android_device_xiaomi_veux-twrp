@@ -115,3 +115,4 @@ TW_INCLUDE_FB2PNG := true
 TW_DEFAULT_LANGUAGE := en 
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
+TW_FRAMERATE := 120
