@@ -114,5 +114,17 @@ TW_INPUT_BLACKLIST := accelerometer
 TW_INCLUDE_FB2PNG := true  
 TW_DEFAULT_LANGUAGE := en 
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone20/temp"
 TW_FRAMERATE := 120
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_SCREEN_BLANK := true
+TW_EXCLUDE_APEX := true
+TW_HAS_EDL_MODE := false
+TW_INCLUDE_REPACKTOOLS := true
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
+
+
+# TWRP Debug Flags
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
