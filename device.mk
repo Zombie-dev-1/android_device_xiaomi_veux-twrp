@@ -60,6 +60,9 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 
+# Vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+
 # Misc.
 TARGET_RECOVERY_DEVICE_MODULES += \
     libdisplayconfig.qti \
