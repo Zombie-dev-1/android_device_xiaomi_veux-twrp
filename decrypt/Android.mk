@@ -33,7 +33,7 @@ ifeq ($(BOARD_USES_QCOM_FBE_DECRYPTION),true)
     LOCAL_POST_INSTALL_CMD += \
         cp -f $(LOCAL_PATH)/crypto_fbe/init.recovery* $(TARGET_ROOT_OUT); \
         bash $(LOCAL_PATH)/scripts/service_cleanup.bash;
-    include $(BUILD_PHONY_PACKAGE)
+    #include $(BUILD_PHONY_PACKAGE)
 endif
 
 ifeq ($(BOARD_USES_QCOM_DECRYPTION),true)
