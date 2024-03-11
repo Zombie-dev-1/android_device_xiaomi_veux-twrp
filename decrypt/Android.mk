@@ -77,5 +77,5 @@ ifeq ($(BOARD_USES_QCOM_DECRYPTION),true)
         LOCAL_POST_INSTALL_CMD += \
             bash $(LOCAL_PATH)/scripts/service_cleanup.bash;
     endif
-    include $(BUILD_PHONY_PACKAGE)
+    #include $(BUILD_PHONY_PACKAGE)
 endif
