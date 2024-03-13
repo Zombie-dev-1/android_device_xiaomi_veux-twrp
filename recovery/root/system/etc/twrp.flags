@@ -8,6 +8,9 @@
 /cache                 ext4    /dev/block/bootdevice/by-name/rescue                               flags=backup=1;wipeingui;wipeduringfactoryreset
 /cust                  ext4    /dev/block/bootdevice/by-name/cust                                 flags=display="Cust";backup=1;flashimg=1
 
+# Internal Storage
+/storage			         f2fs		 /data/media/0						                                          flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
+
 # Boot
 /boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=backup=1;slotselect;flashimg=1
 /dtbo                  emmc    /dev/block/bootdevice/by-name/dtbo                                 flags=backup=1;slotselect;display="Dtbo";flashimg=1
